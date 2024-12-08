@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+<!-- Feedback Function -->
+     <servlet>
+     	<servlet-name>FeedBackInsertServlet</servlet-name>
+     	<servlet-class>FeedBackPackage.FeedBackInsertServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>FeedBackInsertServlet</servlet-name>
+     	<url-pattern>/FeedBackInsertServlet</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>GetAllFeedBackServlet</servlet-name>
+     	<servlet-class>FeedBackPackage.GetAllFeedBackServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>GetAllFeedBackServlet</servlet-name>
+     	<url-pattern>/GetAllFeedBackServlet</url-pattern>
+     </servlet-mapping>
+
+      <servlet>
+     	<servlet-name>FeedBackUpdateServlet</servlet-name>
+     	<servlet-class>FeedBackPackage.FeedBackUpdateServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>FeedBackUpdateServlet</servlet-name>
+     	<url-pattern>/FeedBackUpdateServlet</url-pattern>
+     </servlet-mapping>
+
+      <servlet>
+     	<servlet-name>FeedBackDeleteServlet</servlet-name>
+     	<servlet-class>FeedBackPackage.FeedBackDeleteServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>FeedBackDeleteServlet</servlet-name>
+     	<url-pattern>/FeedBackDeleteServlet</url-pattern>
+     </servlet-mapping>
+     
+<!--  User Function -->
+
+      <servlet>
+     	<servlet-name>InsertUserServlet</servlet-name>
+     	<servlet-class>UserPackage.InsertUserServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>InsertUserServlet</servlet-name>
+     	<url-pattern>/InsertUserServlet</url-pattern>
+     </servlet-mapping>
+
+      <servlet>
+     	<servlet-name>LoginServlet</servlet-name>
+     	<servlet-class>UserPackage.LoginServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>LoginServlet</servlet-name>
+     	<url-pattern>/LoginServlet</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>HomeServlet</servlet-name>
+     	<servlet-class>UserPackage.HomeServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>HomeServlet</servlet-name>
+     	<url-pattern>/HomeServlet</url-pattern>
+     </servlet-mapping>
+
+<!--  Administrator Section -->
+      <servlet>
+     	<servlet-name>AdminLoginServlet</servlet-name>
+     	<servlet-class>UserPackage.AdminLoginServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>AdminLoginServlet</servlet-name>
+     	<url-pattern>/AdminLoginServlet</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>AdminGetAllFeedBackServlet</servlet-name>
+     	<servlet-class>UserPackage.AdminGetAllFeedBackServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>AdminGetAllFeedBackServlet</servlet-name>
+     	<url-pattern>/AdminGetAllFeedBackServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>FetchUserServlet</servlet-name>
+     	<servlet-class>UserPackage.FetchUserServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>FetchUserServlet</servlet-name>
+     	<url-pattern>/FetchUserServlet</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>AdminDashboardServlet</servlet-name>
+     	<servlet-class>UserPackage.AdminDashboardServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>AdminDashboardServlet</servlet-name>
+     	<url-pattern>/AdminDashboardServlet</url-pattern>
+     </servlet-mapping>
+
+</web-app>
